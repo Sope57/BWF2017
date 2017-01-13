@@ -29,6 +29,19 @@
 			float: right
 			img
 				height: 120px
+	#banner-middle
+		position: absolute
+		bottom: 30% 
+		font-size: 16px
+		text-transform: uppercase
+		color: white
+		#bwflogo
+			float: right
+			padding-right: 10vw
+			img
+				height: 120px
+			span
+				color: $blue
 	#banner-bottom
 		position: absolute
 		bottom: 0
@@ -49,4 +62,15 @@
 			color: #BBB
 			font-size: 16px
 			text-align: center
-		
+
+@media(min-width: 768px)
+	#main
+		#banner-middle
+			#bwflogo
+				padding-right: 20vw
+				
+@media(min-width: 992px)
+	#main
+
+@media(min-width: 1200px)
+	#main
