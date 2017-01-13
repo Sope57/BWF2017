@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/Sope57/BWF2017#readme",
   "dependencies": {
-    "autoprefixer": "^6.6.1",
     "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",
     "babel-plugin-add-module-exports": "^0.2.1",
@@ -31,7 +30,6 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "node-sass": "^4.2.0",
     "postcss-loader": "^1.2.2",
-    "precss": "^1.4.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "sass-loader": "^4.1.1",

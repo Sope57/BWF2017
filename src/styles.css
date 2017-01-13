@@ -1,2 +1,32 @@
+body,
+html {
+  font-family: "Squada One", cursive;
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  outline: none; }
+
+#main {
+  position: relative;
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  #main ul {
+    padding: 0;
+    margin: 0; }
+    #main ul li {
+      display: inline-block; }
+  #main #banner-top {
+    position: relative;
+    width: 100%;
+    padding: 0 10px; }
+  #main #banner-bottom {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 0 10px; }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZXMuY3NzIiwic291cmNlUm9vdCI6IiJ9*/
