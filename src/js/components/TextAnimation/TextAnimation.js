@@ -21,7 +21,7 @@ export default class TextAnimation extends React.Component {
 			});
 		} else {
 			clearInterval(this.updateText);
-			setInterval(()=>{
+			/*setInterval(()=>{
 				console.log(text);
 				console.log(currentText);
 				if (currentText.length == text.length) {
@@ -33,7 +33,7 @@ export default class TextAnimation extends React.Component {
 						currentText: text
 					});
 				}
-			}, 200);
+			}, 200);*/
 		}
 	}
 

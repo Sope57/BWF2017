@@ -14,6 +14,12 @@ export default class Layout extends React.Component {
 						</a>
 					</div>
 				</div>
+				<div id="banner-middle">
+					<div id="bwflogo">
+						<img src="../images/logo.png" alt=""/>
+						<div>Junio <span>2/3</span> Cine Tonala <span>Tijuana</span></div>
+					</div>
+				</div>
 				<div id="banner-bottom">
 					<div id="languages">
 						<ul>
