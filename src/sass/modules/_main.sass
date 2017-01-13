@@ -30,25 +30,18 @@
 			img
 				height: 120px
 	#banner-middle
-		position: inherit
+		position: absolute
+		bottom: 30% 
 		font-size: 16px
 		text-transform: uppercase
 		color: white
 		#bwflogo
 			float: right
-			padding-top: 60%
-			padding-right: 24px
+			padding-right: 10vw
 			img
 				height: 120px
-			ul
-				padding-left: 14px
-				li
-					display: inline-block
-					padding: 2px 4px 0 4px
-				#c-blue
-					color: $blue
-		span
-			color: $blue
+			span
+				color: $blue
 	#banner-bottom
 		position: absolute
 		bottom: 0
@@ -69,4 +62,15 @@
 			color: #BBB
 			font-size: 16px
 			text-align: center
-		
+
+@media(min-width: 768px)
+	#main
+		#banner-middle
+			#bwflogo
+				padding-right: 20vw
+				
+@media(min-width: 992px)
+	#main
+
+@media(min-width: 1200px)
+	#main
