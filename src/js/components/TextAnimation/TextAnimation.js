@@ -26,14 +26,14 @@ export default class TextAnimation extends React.Component {
 				console.log(currentText);
 				if (currentText.length == text.length) {
 					this.setState({
-						currentText: currentText + "__"
+						currentText: text + "__"
 					});
 				} else {
 					this.setState({
 						currentText: text
 					});
 				}
-			}, 200);
+			}, 1000);
 		}
 	}
 
