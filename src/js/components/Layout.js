@@ -3,11 +3,37 @@ import React from 'react'
 import TextAnimation from './TextAnimation/TextAnimation'
 
 export default class Layout extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			lang : "es",
+			rights: {
+				es: "Todos los Derechos Reservados",
+				en: "All Rights Reserved"
+			}
+
+		}
+	}
+
+	_setLanguageEn() {
+		this.setState({
+			lang: "en"
+		});
+	}
+
+	_setLanguageEs() {
+		this.setState({
+			lang: "es"
+		});
+	}
+
 	render() {
+		const { lang, rights } = this.state;
+
 		return (
 			<div id="main" style={{backgroundImage: "url(images/bg-mobil.jpg)"}}>
 				<div id="banner-top">
-					<TextAnimation />
+					<TextAnimation  lang={lang}/>
 					<div id="submit">
 						<a href="http://bajawebfest.com">
 							<img src="../images/btn-submit.png" alt=""/>
@@ -24,10 +50,10 @@ export default class Layout extends React.Component {
 					<div id="languages">
 						<ul>
 							<li>
-								<div>En</div>
+								<div class={"lang-button " + (lang == "es" ? "active" : "")} onClick={this._setLanguageEs.bind(this)}>Es</div>
 							</li>
 							<li>
-								<div>Es</div>
+								<div class={"lang-button " + (lang == "en" ? "active" : "")} onClick={this._setLanguageEn.bind(this)}>En</div>
 							</li>
 						</ul>
 					</div>
@@ -45,7 +71,7 @@ export default class Layout extends React.Component {
 						</ul>
 					</div>
 					<div id="footer">
-						Baja Web Fest 2017. All Rights Reserved
+						Baja Web Fest 2017. { rights[lang] }
 					</div>
 				</div>
 			</div>
