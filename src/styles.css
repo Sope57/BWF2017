@@ -54,6 +54,9 @@ html {
         height: 120px; }
       #main #banner-middle #bwflogo span {
         color: #81cfcb; }
+      #main #banner-middle #bwflogo div {
+        padding-left: 2vw;
+        word-spacing: 6px; }
   #main #banner-bottom {
     position: absolute;
     bottom: 0;
@@ -63,7 +66,8 @@ html {
     #main #banner-bottom #languages {
       text-transform: uppercase; }
       #main #banner-bottom #languages .lang-button {
-        padding: 0 10px; }
+        padding: 0 10px;
+        cursor: pointer; }
         #main #banner-bottom #languages .lang-button.active {
           border: 1px solid #81cfcb; }
     #main #banner-bottom #social {
@@ -80,7 +84,73 @@ html {
       text-align: center; }
 
 @media (min-width: 768px) {
-  #main #banner-middle #bwflogo {
-    padding-right: 20vw; } }
+  #main #banner-middle {
+    bottom: 26%;
+    font-size: 28px; }
+    #main #banner-middle #bwflogo {
+      padding-right: 10vw; }
+      #main #banner-middle #bwflogo img {
+        height: 200px; }
+      #main #banner-middle #bwflogo div {
+        padding-left: 2vw; }
+  #main #banner-top #text-animation {
+    font-size: 32px;
+    line-height: 36px; }
+  #main #banner-top #submit img {
+    height: 160px; }
+  #main #banner-bottom {
+    font-size: 46px; }
+    #main #banner-bottom li {
+      padding: 0 24px; }
+    #main #banner-bottom #footer {
+      font-size: 28px;
+      margin-top: 10px; } }
+
+@media (min-width: 992px) {
+  #main #banner-middle {
+    bottom: 32%;
+    font-size: 22px; }
+    #main #banner-middle #bwflogo {
+      padding-right: 18vw; }
+      #main #banner-middle #bwflogo img {
+        height: 160px; }
+      #main #banner-middle #bwflogo div {
+        padding-left: 3vw; }
+  #main #banner-top #text-animation {
+    font-size: 28px;
+    line-height: 30px; }
+  #main #banner-top #submit img {
+    height: 160px; }
+  #main #banner-bottom {
+    font-size: 30px; }
+    #main #banner-bottom li {
+      padding: 0 6px; }
+    #main #banner-bottom #footer {
+      font-size: 18px;
+      margin-top: 10px; } }
+
+@media (min-width: 1200px) {
+  #main #banner-middle {
+    bottom: 35%;
+    font-size: 24px; }
+    #main #banner-middle #bwflogo {
+      padding-right: 28vw; }
+      #main #banner-middle #bwflogo img {
+        height: 190px; }
+      #main #banner-middle #bwflogo div {
+        padding-left: 2vw;
+        word-spacing: 10px; }
+  #main #banner-top #text-animation {
+    font-size: 24px;
+    line-height: 24px; }
+  #main #banner-top #submit img {
+    height: 120px; }
+  #main #banner-bottom {
+    font-size: 24px; }
+    #main #banner-bottom li {
+      padding: 0 10px; }
+    #main #banner-bottom #footer {
+      font-size: 20px;
+      margin-top: 10px; } }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZXMuY3NzIiwic291cmNlUm9vdCI6IiJ9*/
