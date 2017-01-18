@@ -10,8 +10,16 @@ export default class Layout extends React.Component {
 			rights: {
 				es: "Todos los Derechos Reservados",
 				en: "All Rights Reserved"
-			}
-
+			},
+			background: {
+				mobil: {
+					backgroundImage: "url(images/bg-mobil.jpg)"
+				},
+				desktop: {
+					backgroundImage: "url(images/bg-desktop.jpg)"
+				}
+			},
+			activeBackground: window.innerWidth >= window.innerHeight ? "desktop" : "mobil"
 		}
 	}
 
@@ -27,11 +35,21 @@ export default class Layout extends React.Component {
 		});
 	}
 
+	_updateBackground() {
+		this.setState({
+			activeBackground: window.innerWidth >= window.innerHeight ? "desktop" : "mobil"
+		});
+	}
+
+	componentDidMount() {
+		window.addEventListener("resize", this._updateBackground.bind(this));
+	}
+
 	render() {
-		const { lang, rights } = this.state;
+		const { lang, rights, background, activeBackground } = this.state;
 
 		return (
-			<div id="main" style={{backgroundImage: "url(images/bg-mobil.jpg)"}}>
+			<div id="main" style={background[activeBackground]}>
 				<div id="banner-top">
 					<TextAnimation  lang={lang}/>
 					<div id="submit">
