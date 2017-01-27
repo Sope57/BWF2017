@@ -27,123 +27,117 @@
 			word-spacing: 10000px
 		#submit
 			float: right
-			img
+			.submit-button
+				width: 120px
 				height: 120px
+				margin-top: -8px
+				background-position: center
+				background-repeat: no-repeat
+				-webkit-background-size: contain
+				-o-background-size: contain
+				background-size: contain
 	#banner-middle
 		position: absolute
 		bottom: 30% 
-		font-size: 16px
+		font-size: 14px
 		text-transform: uppercase
 		color: white
 		#bwflogo
-			float: right
-			padding-right: 10vw
+			padding-left: 12vw
 			img
 				height: 120px
 			span
 				color: $blue
-			div
-				padding-left: 2vw
-				word-spacing: 6px
 	#banner-bottom
 		position: absolute
 		bottom: 0
 		padding-bottom: 20px 
 		color: $yellow
-		font-size: 26px
+		font-size: 22px
 		#languages
 			text-transform: uppercase
 			.lang-button
-				padding: 0 10px
+				padding: 0 8px
 				cursor: pointer 
 				&.active
 					border: 1px solid $blue 
 		#social
 			float: right
+			ul
+				display: inline-block
 			li
-				padding: 0 10px
+				padding: 0 8px
 				a
-					color: $yellow 
+					color: $yellow
+			#logos
+				border-left: 1px solid #FFF 
+				height: 35px
+				img
+					height: 30px 
+					margin-top: -12px
 		#footer
 			width: 100%
 			margin-top: 20px
 			color: #BBB
-			font-size: 16px
+			font-size: 14px
 			text-align: center
 
 @media(min-width: 768px)
 	#main
-		#banner-middle
-			bottom: 26%
-			font-size: 28px
-			#bwflogo
-				padding-right: 10vw
-				img
-					height: 200px
-				div
-					padding-left: 2vw
 		#banner-top
 			#text-animation
-				font-size: 32px
-				line-height: 36px 
+				font-size: 26px
+				line-height: 30px 
 			#submit
-				img
+				.submit-button
 					height: 160px
+					width: 160px
+		#banner-middle
+			bottom: 26%
+			font-size: 26px
+			#bwflogo
+				padding-left: 25vw
+				img
+					height: 200px
 		#banner-bottom
-			font-size: 46px
-			li
-				padding: 0 24px
+			font-size: 30px
+			.lang-button
+				padding: 0 10px
+			#social
+				li
+					padding: 0 10px
 			#footer
-				font-size: 28px
+				font-size: 24px
 				margin-top: 10px
 @media(min-width: 992px)
 	#main
 		#banner-middle
 			bottom: 32%
-			font-size: 22px
 			#bwflogo
-				padding-right: 18vw
-				img
-					height: 160px
-				div
-					padding-left: 3vw
-		#banner-top
-			#text-animation
-				font-size: 28px
-				line-height: 30px 
-			#submit
-				img
-					height: 160px
-		#banner-bottom
-			font-size: 30px
-			li
-				padding: 0 6px
-			#footer
-				font-size: 18px
-				margin-top: 10px
+				padding-left: 40vw
 @media(min-width: 1200px)
 	#main
-		#banner-middle
-			bottom: 35%
-			font-size: 24px
-			#bwflogo
-				padding-right: 28vw
-				img
-					height: 190px
-				div
-					padding-left: 2vw
-					word-spacing: 10px
 		#banner-top
 			#text-animation
 				font-size: 24px
 				line-height: 24px 
 			#submit
+				.submit-button
+					height: 140px
+					width: 140px
+		#banner-middle
+			bottom: 35%
+			font-size: 24px
+			#bwflogo
 				img
-					height: 120px
+					height: 190px
 		#banner-bottom
 			font-size: 24px
 			li
 				padding: 0 10px
+			#social
+				li
+					padding: 0 20px
 			#footer
 				font-size: 20px
 				margin-top: 10px

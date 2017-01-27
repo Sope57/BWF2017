@@ -29,7 +29,7 @@ module.exports = {
     filename: "client.min.js"
   },
   plugins: debug ? [
-    new ExtractTextPlugin('styles.css'),
+    new ExtractTextPlugin('styles.min.css'),
   ] : [
     new webpack.DefinePlugin({
       'process.env': {
@@ -39,6 +39,6 @@ module.exports = {
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false }),
-    new ExtractTextPlugin('styles.css')
+    new ExtractTextPlugin('styles.min.css')
   ],
 };
